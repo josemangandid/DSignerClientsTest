@@ -1,0 +1,6 @@
+framework module DSignerClientsTest {
+  umbrella header "DSignerClientsTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

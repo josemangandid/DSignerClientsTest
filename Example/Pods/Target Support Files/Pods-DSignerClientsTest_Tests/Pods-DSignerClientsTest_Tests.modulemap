@@ -1,0 +1,6 @@
+framework module Pods_DSignerClientsTest_Tests {
+  umbrella header "Pods-DSignerClientsTest_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

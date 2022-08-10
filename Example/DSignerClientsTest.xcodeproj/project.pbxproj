@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		0AA554AF378A6E7329BC7595 /* Pods-DSignerClientsTest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSignerClientsTest_Tests.release.xcconfig"; path = "Target Support Files/Pods-DSignerClientsTest_Tests/Pods-DSignerClientsTest_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		0D97C4600F4CE691924153F0 /* Pods_DSignerClientsTest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSignerClientsTest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DE21D53B4DCD30D983CD001 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5DE21D53B4DCD30D983CD001 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DSignerClientsTest_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSignerClientsTest_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,8 +44,8 @@
 		679BE8D63F8A0B344818FBFB /* Pods-DSignerClientsTest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSignerClientsTest_Example.debug.xcconfig"; path = "Target Support Files/Pods-DSignerClientsTest_Example/Pods-DSignerClientsTest_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		75E98A405A469A117DE637F7 /* Pods_DSignerClientsTest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSignerClientsTest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B60DA8317300C0EFD623455 /* Pods-DSignerClientsTest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSignerClientsTest_Example.release.xcconfig"; path = "Target Support Files/Pods-DSignerClientsTest_Example/Pods-DSignerClientsTest_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E29EFEDC55122A74871E06CC /* DSignerClientsTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DSignerClientsTest.podspec; path = ../DSignerClientsTest.podspec; sourceTree = "<group>"; };
-		ED1599671E896E42319A96EA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E29EFEDC55122A74871E06CC /* DSignerClientsTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DSignerClientsTest.podspec; path = ../DSignerClientsTest.podspec; sourceTree = "<group>"; };
+		ED1599671E896E42319A96EA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FA9B0AFCA7D3CC9CCCA0FA46 /* Pods-DSignerClientsTest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSignerClientsTest_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DSignerClientsTest_Tests/Pods-DSignerClientsTest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,6 @@
 				FA9B0AFCA7D3CC9CCCA0FA46 /* Pods-DSignerClientsTest_Tests.debug.xcconfig */,
 				0AA554AF378A6E7329BC7595 /* Pods-DSignerClientsTest_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,11 +212,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1340;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1340;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,10 +313,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DSignerClientsTest_Example/Pods-DSignerClientsTest_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DSignerClientsTest/DSignerClientsTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSignerClientsTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,7 +486,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -499,7 +501,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -520,7 +522,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSignerClientsTest_Example.app/DSignerClientsTest_Example";
 			};
 			name = Debug;
@@ -538,7 +540,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSignerClientsTest_Example.app/DSignerClientsTest_Example";
 			};
 			name = Release;

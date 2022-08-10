@@ -1,0 +1,22 @@
+{
+  "name": "DSignerClientsTest",
+  "version": "0.1.0",
+  "summary": "A short description of DSignerClientsTest.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/José Mangandid/DSignerClientsTest",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "José Mangandid": "mangandid35@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/José Mangandid/DSignerClientsTest.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DSignerClientsTest/Classes/**/*"
+}
